@@ -1,0 +1,30 @@
+{
+  "name": "element-solid-root",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "ui": "pnpm -F element-ui-solid",
+    "web": "pnpm -F element-ui-solid-docs",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "dev:web": "pnpm web dev",
+    "build:all": "pnpm ui build && pnpm web build",
+    "build:ui": "pnpm ui build",
+    "build:web": "pnpm web build",
+    "g": "npx tsx ./scripts/genComp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.8.6",
+    "tsx": "^3.14.0",
+    "turbo": "^1.10.15"
+  },
+  "workspaces": [
+    "packages/**",
+    "examples"
+  ]
+}
